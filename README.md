@@ -34,3 +34,8 @@ Esse comando não é necessário para executar a infraestrtura, porém será nec
 
 `docker run --name ecommerce -p 5432:5432 -e POSTGRES_PASSWORD=12345678 -e POSTGRES_USER=techchallange postgres:latest`
 
+### Estrura de tabelas
+Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada tabela e o motivo que utilizamos esse estrtura no vídeo de apresentação da arquitetura
+
+![]()
+
