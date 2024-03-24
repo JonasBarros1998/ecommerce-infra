@@ -14,7 +14,7 @@ Nesse repositório além de construir cada serviço mencionado acima, também ir
 - Usuário na AWS sem nenhuma política anexada
 
 ### O que deve ser atualizado nos scripts terraform
-Se você navegar por cada script verá esse ADD_ isso significa que você deverá substituir pelos valores que estão de acordo com o seu ambiente AWS. Por exemplo, ADD_REGIAO_AWS que dizer que você deverá substituir pela região da AWS que você
+Se você navegar por cada script verá esse **ADD_** isso significa que você deverá substituir pelos valores que estão de acordo com o seu ambiente AWS. Por exemplo, **ADD_REGIAO_AWS** que dizer que você deverá substituir pela região da AWS que você
 costuma utilizar no seu ambiente AWS.
 
 Após conferir que todas as informações foram atualizadas, podemos prosseguir para o próximo etapa.
