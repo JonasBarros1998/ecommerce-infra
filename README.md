@@ -37,5 +37,5 @@ Esse comando não é necessário para executar a infraestrtura, porém será nec
 ### Estrura de tabelas
 Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada tabela e o motivo que utilizamos esse estrtura no vídeo de apresentação da arquitetura
 
-![]()
+![diagrama de tabela](https://raw.githubusercontent.com/JonasBarros1998/ecommerce-infra/main/diagrama-de-tabela.png)
 
