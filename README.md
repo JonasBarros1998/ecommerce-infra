@@ -29,5 +29,8 @@ Após conferir que todas as informações foram atualizadas, podemos prosseguir 
 - Se tudo foi criado, vá até o usuário que você anexou a politica de administrador e **remova-o**.
 - Agora crie credenciais de acesso ao segundo usuário que você criou no passo (requisitos essenciais para rodar a infra). Observe também que nesse segundo usuário haverá apenas as políticas que realmente utilizaremos na aplicação.
 
+### Banco de dados 
+Esse comando não é necessário para executar a infraestrtura, porém será necessário para rodar todos os microsserviços
 
+`docker run --name ecommerce -p 5432:5432 -e POSTGRES_PASSWORD=12345678 -e POSTGRES_USER=techchallange postgres:latest`
 
