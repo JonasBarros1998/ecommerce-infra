@@ -34,8 +34,24 @@ Esse comando não é necessário para executar a infraestrtura, porém será nec
 
 `docker run --name ecommerce -p 5432:5432 -e POSTGRES_PASSWORD=12345678 -e POSTGRES_USER=techchallange postgres:latest`
 
+
+### Pontos de aprendizados
+
+1- Criptografia: Nos trabalhos anteriores do tech challange, eu estava implementando criptografia porém com as chaves armazenadas no própio código. Nesse ponto tech challange, a segurança é um dos pontos ensinado, passei a utilizar chaves de criptografia gerenciada pela própria AWS. Para fazer a criptografia e descriptografia, utilizei os recursos do AWS Spring Cloud. 
+
+2- Variáveis de ambiente: Não estou utilizando o arquivo application.yml para guardar as minhas variáveis de ambiente, para isso estou armazenando cada uma delas no **AWS key manager Service**. Logo essas variáveis ficam armazenadas fora do ambiente da minha aplicação. Para integrar cada uma ao meu projeto, estou utilizando a lib **spring cloud** no qual já temos uma implementação do KMS e então é apenas carregar e referenciar no arquivo `application.yml`
+
+3- Concorrência: Em alguns tech challange não implementei nenhuma estratégia de concorrência, mas nesse projeto tive que implementar. A estratégia que utilizei foi os recursos do Executor Framework do Java. Ao utilizá-lo consigo enfileirar as requisições mais críticas do meu projeto, como por exemplo ao finalizar a compra. Veja como implementei [FinalizarCompras.java](https://github.com/JonasBarros1998/postech-gestao-de-produtos/blob/167688036fde03430adf62d7f319a3755d41db5b/src/main/java/com/fiap/postechgestaoprodutos/aplicacao/FinalizarCompras.java#L43) 
+
+
 ### Estrura de tabelas
-Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada tabela e o motivo que utilizamos esse estrtura no vídeo de apresentação da arquitetura
+Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada tabela e o motivo que utilizamos esse estrutura no vídeo de apresentação da arquitetura na plataform da FIAP
 
 ![diagrama de tabela](https://raw.githubusercontent.com/JonasBarros1998/ecommerce-infra/main/diagrama-de-tabela.png)
+
+
+### Diagrama de arquitetura
+Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada serviço e o motivo que utilizamos esse estrutura no vídeo de apresentação da arquitetura na plataforma da FIAP
+
+![diagrama de arquitetura](https://firebasestorage.googleapis.com/v0/b/app-english-class.appspot.com/o/Fase-5-Diagrama-de-Arquitetura.drawio.png?alt=media&token=16d3247c-58d4-4411-aeda-65bbe68975fc)
 
