@@ -77,7 +77,7 @@ Veja que todas as políticas foram criadas utulizando apenas os recursos que ire
 ### Estrura de tabelas
 Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada tabela e o motivo que utilizamos esse estrutura no vídeo de apresentação da arquitetura na plataform da FIAP
 
-![diagrama de tabela]([https://raw.githubusercontent.com/JonasBarros1998/ecommerce-infra/main/diagrama-de-tabela.png](https://firebasestorage.googleapis.com/v0/b/app-english-class.appspot.com/o/Fase-5-tabelas.drawio.png?alt=media&token=8bd71988-7233-4b20-a9d6-88e9e2582fd6))
+![diagrama de tabela](https://firebasestorage.googleapis.com/v0/b/app-english-class.appspot.com/o/Fase-5-tabelas.drawio.png?alt=media&token=8bd71988-7233-4b20-a9d6-88e9e2582fd6)
 
 
 ### Diagrama de arquitetura
