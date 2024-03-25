@@ -73,6 +73,12 @@ Observe a image abaixo de como deverá ficar o seu usuário para que a aplicaç�
 
 Veja que todas as políticas foram criadas utulizando apenas os recursos que iremos precisar. 
 
+### Recursos criados na AWS ao executar esse script terraform
+- 3 variáveis de ambiente
+- 1 Chave de criptografia KMS
+- 1 Fila AWS SQS
+- 1 Fila AWS DLQ 
+
 
 ### Estrura de tabelas
 Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada tabela e o motivo que utilizamos esse estrutura no vídeo de apresentação da arquitetura na plataform da FIAP
@@ -83,10 +89,10 @@ Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada
 ### Diagrama de arquitetura
 Segue abaixo, como as tabelas ficaram estruturadas. Você verá detalhes de cada serviço e o motivo que utilizamos esse estrutura no vídeo de apresentação da arquitetura na plataforma da FIAP
 
-### Collections do postman
-[]()
-
 ![diagrama de arquitetura](https://firebasestorage.googleapis.com/v0/b/app-english-class.appspot.com/o/Fase-5-Diagrama-de-Arquitetura.drawio.png?alt=media&token=16d3247c-58d4-4411-aeda-65bbe68975fc)
+
+### Collections do postman
+[collections postmam](https://github.com/JonasBarros1998/ecommerce-infra/blob/main/collections-postman.json)
 
 
 
